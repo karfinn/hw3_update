@@ -1,12 +1,12 @@
 <!--- places detail page--->
 
-<h1><strong><%= @place["name"] %><strong></h1>
+<h1><strong><u><%= @place["name"] %></strong></u></h1>
 
 
   <% for entry in @entries%>
       <h2><%= entry["title"] %></h2>
-      <p><em><%= entry["posted_on"] %><em></p>
-      <ul>Description:<%= entry["description"] %></ul>
+      <p><em><%= entry["posted_on"] %></em></p>
+      <ul>Description: <%= entry["description"] %></ul>
      
       </a>
 

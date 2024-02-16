@@ -2,8 +2,8 @@ class EntriesController < ApplicationController
 
   def show
     # renders new entry
-    @place = Place.find_by({"id" => params["id"]})
-    @entries= Entry.find_by({"id" => @entries["place_id"]})
+    @entries = Entry.find_by({"id" => params["id"]})
+    @place = Place.find_by({"id" => @entries["place_id"]})
   end
   
   def new

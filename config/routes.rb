@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources "places"
   get("/", { :controller => "places", :action => "index" })
 
+  resources "entries"
+
 end

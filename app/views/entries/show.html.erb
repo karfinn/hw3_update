@@ -1,10 +1,9 @@
 
-
 <h1><%= @entries["title"] %></h1>
+<em><%= @entries["posted_on"] %><em>
 
-<ul>
-  <li><%= @entries["posted_on"] %></li>
-  <li><%= @entries["description"] %></li>
-</ul>
+
+<p> Description: <%= @entries["description"] %></p>
+
 
 <p><a href="/places/<%= @place["id"] %>">Back to <%= @place["name"] %></a></p>

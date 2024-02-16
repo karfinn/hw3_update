@@ -7,8 +7,8 @@ class EntriesController < ApplicationController
   end
   
   def new
-    # shows new entry
-    @entries = Entry.new
+    # renders new view connected to Place_ID
+    @place = Place.find_by({ "id" => params["place_id"] })
    end 
   
   def create

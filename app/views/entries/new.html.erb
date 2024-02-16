@@ -16,11 +16,17 @@
     <input type="text" name="description">
   </p>
 
-  <!-- transfer state from the previous action to the next, HELP -->
-  <p>
+  <!-- transfer state from previous action to the next, used Chat GPT to use CSS code to hide the label -->
+ <style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<p class="hidden">
     <label for="place_id">Place</label>
-    <input type="text" name="place_id" value="<%= @place["id"] %>">
-    </p>
+    <input type="text" name="place_id" value="<%=@place["id"] %>">
+  </p>
 
   <button>Submit</button>
 </form>
